@@ -32,6 +32,12 @@
 							<li><a href="#">Italian</a></li>
 							<li><a href="#">French</a></li>
 							<li><a href="#">German</a></li>
+							<br>
+							<br>
+							<br>
+							<li><a href="#">Plans</a></li>
+							<li><a href="#">Reviews</a></li>
+							<li><a href="#">Faq</a></li>
 						</ul>
 					</div>
 					<div class="nav__blocks">
@@ -167,12 +173,13 @@
 					<div class="sale__item-2">
 						<div class="sale__text-2">
 							<p class="sale__item-title">Up to 90% payout</p>
-							<p class="sale__item-suptitle">The most beneficial profit sharing scheme</p>
+							<p class="sale__item-suptitle f-24">The most beneficial profit sharing scheme</p>
 						</div>
 					</div>
 					<div class="sale__item-3">
 						<div class="sale__text-3">
 							<p class="sale__item-title">100% refund</p>
+							<p class="sale__item-suptitle f-32">after<br />the successful assessment</p>
 						</div>
 					</div>
 					<div class="sale__item-4">
@@ -825,11 +832,17 @@
 			spaceBetween: 16,
 			debugger: true,
 		});
-		var swiper2 = new Swiper(".mobile_slider", {
-			slidesPerView: "auto",
-			spaceBetween: 16,
+		var swiper2 = new Swiper('.mobile_slider', {
+			slidesPerView: 1.2,
+			spaceBetween: 0,
+			breakpoints: {
+				600: {
+					slidesPerView: 2,
+					spaceBetween: 0,
+				},
+			},
 			debugger: true,
-		});
+		})
 	</script>
 </body>
 

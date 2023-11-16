@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 
 a {
@@ -115,7 +116,7 @@ body {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1250px) {
   .navigation-list ul.mobile-link {
     display: flex;
   }
@@ -781,7 +782,7 @@ body {
 @media (max-width: 600px) {
   .sale__item-1 {
     background-image: url(../img/sale-item-mob1.png);
-    width: 353.263px;
+    width: 100%;
     height: 310.723px;
     margin-top: 0;
   }
@@ -821,11 +822,11 @@ body {
   max-width: 340px;
   margin-top: 5px;
 }
-@media (max-width: 600px) {
-  .sale__item-suptitle {
-    font-size: 22px;
-    max-width: 264.559px;
-  }
+.sale__item-list-2 {
+  transform: rotate(-12.554deg);
+  margin-top: 100px;
+  margin-left: 80px;
+  color: #000b36;
 }
 
 .sale__item-2 {
@@ -946,15 +947,11 @@ body {
 }
 
 .sale__item-list-1 {
-  margin-top: 136px;
-  margin-left: 39px;
+  margin-top: 160px;
+  margin-left: 62px;
   color: #000b36;
   max-width: 92px;
-}
-@media (max-width: 600px) {
-  .sale__item-list-1 {
-    margin-left: 20px;
-  }
+  rotate: -20deg;
 }
 
 .sale__list-title {
@@ -980,12 +977,6 @@ body {
   }
 }
 
-.sale__item-list-2 {
-  transform: rotate(-12.554deg);
-  margin-top: 100px;
-  margin-left: 80px;
-  color: #000b36;
-}
 .sale__item-list-2 .sale__list-suptitle {
   text-align: start;
 }
@@ -1649,12 +1640,6 @@ body {
   width: 100%;
   min-height: 603px;
 }
-@media (max-width: 920px) {
-  .community__row {
-    background-image: url(../img/community-mob.png);
-    min-height: 1549px;
-  }
-}
 
 .community__title {
   margin-left: 152px;
@@ -1689,15 +1674,6 @@ body {
     margin-left: 0;
   }
 }
-@media (max-width: 920px) {
-  .community__list {
-    flex-direction: column;
-    row-gap: 120px;
-    margin-left: 54px;
-    margin-top: 70px;
-  }
-}
-
 .community__item {
   width: 347px;
   height: 344px;
@@ -1706,13 +1682,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-@media (max-width: 920px) {
-  .community__item {
-    width: 218px;
-    padding: 0;
-  }
-}
-
 @media (max-width: 600px) {
   .sale__bg {
     padding-bottom: 140px;
@@ -1970,7 +1939,7 @@ body {
   width: 100%;
   height: 100%;
 }
-@media (max-width: 800px) {
+@media (max-width: 1250px) {
   #plans {
     display: block;
   }
@@ -2039,7 +2008,7 @@ body {
     line-height: 24px;
     padding: 30px 0px;
     position: relative;
-    color: #ffffff8f;
+    color: #fff;
   }
   .plan-block__price_sale::after {
     content: "";
@@ -2179,7 +2148,8 @@ body {
   }
   .mobile_slider .swiper-slide {
     position: relative;
-    padding: 60px 16px;
+    padding: 60px 8px;
+    width: 50%;
   }
   .mobile_slider .swiper-slide .overlay {
     background-image: url(../img/slide-bg2.svg);
@@ -2229,6 +2199,23 @@ body {
     z-index: 2;
     position: relative;
   }
+}
+
+@media screen and (max-width: 800px) {
+  .mobile_slider .swiper-slide {
+    width: 100%;
+  }
+  .intro__block {
+    height: 1030px;
+  }
+  .community__row {
+    background-image: url(../img/community-mob.png);
+    min-height: 1549px;
+    pointer-events: none;
+  }
+  .community__row * {
+    opacity: 0;
+  }
   .community__row {
     background-size: 100% 100%;
     min-height: auto;
@@ -2237,6 +2224,7 @@ body {
     width: 100dvw;
   }
   .community__list {
+    flex-direction: column;
     row-gap: 20px;
     margin-top: 0;
     padding: 0;
@@ -2256,5 +2244,56 @@ body {
   }
   .community__item-info img {
     object-fit: contain;
+  }
+}
+@media (max-width: 600px) {
+  .sale__item-suptitle {
+    font-size: 22px;
+    max-width: 264.559px;
+  }
+  .f-32 {
+    font-size: 32px;
+  }
+  .f-24 {
+    font-size: 24px;
+  }
+  .sale__item-list-1 .sale__list-suptitle,
+  .sale__item-list-2 .sale__list-title {
+    font-size: 19px;
+  }
+  .sale__item-list-2 {
+    margin-left: 100px;
+    rotate: -9.554deg;
+  }
+  .plan-block__price {
+    font-family: Anonymous Pro;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .plan-block__balance {
+    font-size: 28px;
+    margin-bottom: 0;
+  }
+  .plan-block__price_sale {
+    padding: 15px 0;
+  }
+  .plan-block__price-text {
+    top: -10px;
+  }
+  .plan-block__price_sale::after {
+    background-size: 100%;
+    background-image: url("../img/price-saler.png");
+    rotate: 0deg;
+  }
+  .trade__row {
+    width: 100dvw;
+    margin-left: -16px;
+  }
+  .mobile_slider .swiper-slide .overlay {
+    width: 100%;
+  }
+  .trade__title {
+    padding-left: 16px;
   }
 }
