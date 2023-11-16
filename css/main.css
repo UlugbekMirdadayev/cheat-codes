@@ -2217,11 +2217,14 @@ body {
     opacity: 0;
   }
   .community__row {
-    background-size: 100% 100%;
-    min-height: auto;
+    background-size: contain;
+    height: 1246px;
     background-position: top center;
     margin-left: -16px;
-    width: 100dvw;
+    width: 316px;
+    min-height: auto;
+    margin: 0 auto;
+}
   }
   .community__list {
     flex-direction: column;
