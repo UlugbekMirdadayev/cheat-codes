@@ -2213,7 +2213,7 @@ body {
     min-height: 1549px;
   }
   .community__row {
-    background-size: 100% 100%;
+    background-size: contain;
     min-height: auto;
     background-position: top center;
     margin-left: -16px;
@@ -2315,12 +2315,14 @@ body {
   .community__item:not(:last-child) .community__item-info {
     margin-top: 16.62px;
   }
+  .community__item-info,
   .community__item-text {
     width: 218px;
     margin: 0 auto;
   }
   .community__row {
     min-height: 1549px;
+   
   }
   .community__item:last-child .community__item-info {
     margin-top: 87px;
