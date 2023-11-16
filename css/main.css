@@ -2317,6 +2317,7 @@ body {
   }
   .community__item-text {
     width: 218px;
+    margin: 0 auto;
   }
   .community__row {
     min-height: 1549px;
