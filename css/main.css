@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  user-select: none;
 }
 
 a {
@@ -61,6 +60,9 @@ body {
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
+}
+.f-32 {
+  display: none;
 }
 .container-nav {
   max-width: 1140px;
@@ -2249,6 +2251,7 @@ body {
   }
   .f-32 {
     font-size: 32px;
+    display: inline;
   }
   .f-24 {
     font-size: 24px;
@@ -2322,12 +2325,11 @@ body {
   }
   .community__row {
     min-height: 1549px;
-   
   }
   .community__item:last-child .community__item-info {
     margin-top: 87px;
   }
- .container_community {
+  .container_community {
     height: 1230px;
     overflow: hidden;
   }
