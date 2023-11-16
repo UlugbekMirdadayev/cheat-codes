@@ -2211,20 +2211,13 @@ body {
   .community__row {
     background-image: url(../img/community-mob.png);
     min-height: 1549px;
-    pointer-events: none;
-  }
-  .community__row * {
-    opacity: 0;
   }
   .community__row {
-    background-size: contain;
-    height: 1246px;
+    background-size: 100% 100%;
+    min-height: auto;
     background-position: top center;
     margin-left: -16px;
-    width: 316px;
-    min-height: auto;
-    margin: 0 auto;
-}
+    width: 100dvw;
   }
   .community__list {
     flex-direction: column;
@@ -2298,5 +2291,41 @@ body {
   }
   .trade__title {
     padding-left: 16px;
+  }
+  .community__title {
+    margin-bottom: 0;
+    padding-top: 36px;
+    padding-bottom: 63px;
+  }
+  .community__list {
+    row-gap: 0;
+  }
+  .community__item {
+    height: auto;
+    margin-bottom: 60px;
+  }
+  .community__item:last-child {
+    margin-bottom: 75px;
+  }
+  .community__item-info img {
+    object-fit: cover;
+    width: 33.237px;
+    height: 33.237px;
+  }
+  .community__item:not(:last-child) .community__item-info {
+    margin-top: 16.62px;
+  }
+  .community__item-text {
+    width: 218px;
+  }
+  .community__row {
+    min-height: 1549px;
+  }
+  .community__item:last-child .community__item-info {
+    margin-top: 87px;
+  }
+ .container_community {
+    height: 1230px;
+    overflow: hidden;
   }
 }
