@@ -763,6 +763,7 @@ body {
   .sale__row {
     flex-direction: column;
     left: 0;
+    align-items: center;
     overflow: hidden;
     width: 100%;
   }
@@ -2138,9 +2139,8 @@ body {
     display: none;
   }
   .trade__link {
-    width: auto;
     height: auto;
-    margin: 0 31px;
+    margin: 0 auto;
   }
   .trade__link a {
     font-size: 18.673px;
@@ -2202,7 +2202,9 @@ body {
     position: relative;
   }
 }
-
+.community__item-info img {
+  object-fit: contain;
+}
 @media screen and (max-width: 800px) {
   .mobile_slider .swiper-slide {
     width: 100%;
@@ -2239,9 +2241,6 @@ body {
     margin-bottom: 0;
     padding-top: 36px;
     padding-bottom: 36px;
-  }
-  .community__item-info img {
-    object-fit: contain;
   }
 }
 @media (max-width: 600px) {
@@ -2332,5 +2331,19 @@ body {
   .container_community {
     height: 1230px;
     overflow: hidden;
+  }
+  .trade__link {
+    max-width: 351px;
+    min-width: calc(316px - 62px);
+    width: auto;
+  }
+  .nav__blocks {
+    justify-content: end;
+    flex: 1;
+    margin-right: 24px;
+  }
+  body:has(.burger-checkbox:checked) .nav__blocks {
+    margin-right: 0px;
+    flex: none;
   }
 }
